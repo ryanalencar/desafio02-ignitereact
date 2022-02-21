@@ -6,7 +6,7 @@ import { Button } from "./Button";
 
 import "../styles/sidebar.scss";
 
-interface SideBarProps {
+interface ISideBarProps {
   genres: GenreResponseProps[];
   selectedGenreId: number;
   sidebarItemClick: (id: number) => void;
@@ -16,7 +16,7 @@ export function SideBar({
   genres,
   selectedGenreId,
   sidebarItemClick,
-}: SideBarProps) {
+}: ISideBarProps) {
   return (
     <nav className="sidebar">
       <span>
